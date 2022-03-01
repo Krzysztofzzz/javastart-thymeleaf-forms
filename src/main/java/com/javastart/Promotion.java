@@ -6,7 +6,7 @@ import java.math.BigDecimal;
 class Promotion {
     private String product;
     private String shop;
-    private BigDecimal price;
+    private BigDecimal originalPrice;
     private BigDecimal discountPrice;
 
     public String getProduct() {
@@ -25,12 +25,12 @@ class Promotion {
         this.shop = shop;
     }
 
-    public BigDecimal getPrice() {
-        return price;
+    public BigDecimal getOriginalPrice() {
+        return originalPrice;
     }
 
-    public void setPrice(BigDecimal price) {
-        this.price = price;
+    public void setOriginalPrice(BigDecimal originalPrice) {
+        this.originalPrice = originalPrice;
     }
 
     public BigDecimal getDiscountPrice() {

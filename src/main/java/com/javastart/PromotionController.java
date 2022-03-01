@@ -21,7 +21,8 @@ class PromotionController {
     }
 
     @GetMapping("/add")
-    String addForm() {
+    String addForm(Model model) {
+        model.addAttribute("promotion", new Promotion());
         return "add-form";
     }
 

@@ -34,9 +34,9 @@
         <tr th:each="promotion: ${promotions}" th:object="${promotion}">
             <td th:text="*{product}"></td>
             <td th:text="*{shop}"></td>
-            <td th:text="|*{price}zł|"></td>
+            <td th:text="|*{originalPrice}zł|"></td>
             <td th:text="|*{discountPrice}zł|"></td>
-            <td th:text="|*{price - discountPrice}zł|"></td>
+            <td th:text="|*{originalPrice - discountPrice}zł|"></td>
         </tr>
         </tbody>
     </table>
